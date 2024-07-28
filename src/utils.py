@@ -22,7 +22,9 @@ def get_salary_range() -> tuple[int, int]:
             pass
 
 
-def filter_vacancies(vacancies: list[Vacancy], filter_words: list[str], salary_range: tuple[int, int]) -> list[Vacancy]:
+def filter_vacancies(
+    vacancies: list[Vacancy], filter_words: list[str], salary_range: tuple[int, int]
+) -> list[Vacancy]:
     """Функция фильтрует список вакансий по ключевым словам и диапазону зарплат"""
     filtered_vacancies = []
     for vacancy in vacancies:
